@@ -10,4 +10,14 @@ public class HelloController {
     public String index() {
         return "Hello Spring Boot!";
     }
+    
+    
+ 
+  @DeleteMapping("/{id}")
+  @ResponseStatus(HttpStatus.OK)
+  void deleteSOMETHING(@PathVariable Long id) {
+    SOMETHINGService.deleteById(id);
+  }
+    
+  }
 }
