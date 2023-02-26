@@ -30,7 +30,7 @@ public class DemoApplication {
 		return names.toString();
 	}
 	
-		// http://localhost:8080/insert?name=LEV
+		// http://localhost:8080/insert?name=NAME
 	@GetMapping("/insert")
 	public String insertName(@RequestParam(value = "name", defaultValue = "empty") String name) {
 		names.add(name);
