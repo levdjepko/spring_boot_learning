@@ -1,5 +1,4 @@
 package com.example.demo;
-
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -10,7 +9,6 @@ public class HelloController {
         return "Hello Spring Boot!";
     }
         
- 
   @DeleteMapping("/{id}")
   @ResponseStatus(HttpStatus.OK)
   void deleteSOMETHING(@PathVariable Long id) {
